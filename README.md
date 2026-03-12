@@ -61,3 +61,12 @@ npm run dev
 
 > Note: the ML service will auto-train and save a lightweight CNN on MNIST the first time if no model file exists.
 > TensorFlow is pinned as `tensorflow-cpu>=2.20,<2.22` for broader compatibility on newer Python environments (including recent Windows installs).
+
+## Merge-Conflict Safe Versions
+If you hit merge conflicts in `README.md` or requirements files, keep these final values:
+
+- `backend/requirements.txt`: FastAPI + Uvicorn + HTTPX + OpenCV + NumPy + Pillow + python-multipart
+- `ml-model/requirements.txt`: FastAPI + Uvicorn + NumPy + Pillow + `tensorflow-cpu>=2.20,<2.22`
+
+Also ensure there are **no** conflict markers like `<<<<<<<`, `=======`, `>>>>>>>` left in any file before commit.
+

@@ -1,5 +1,6 @@
+# Smart Ink AI ML service dependencies (merge-resolved baseline)
 fastapi==0.115.0
-uvicorn[standard]==0.30.6
-tensorflow-cpu>=2.20.0,<2.22.0
 numpy==1.26.4
 pillow==10.4.0
+tensorflow-cpu>=2.20.0,<2.22.0
+uvicorn[standard]==0.30.6
